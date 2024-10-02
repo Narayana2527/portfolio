@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import  './sidebar.module.css';
+import styles from './sidebar.module.css';
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 
@@ -11,7 +11,7 @@ export default function Sidebar(){
         setIsOpen(!isOpen)
     }
     return (
-        <nav  className={`p-3 sidebar ${isOpen ? 'open' : ''}`}>
+        <nav  className={`p-3  sidebar ${isOpen ? 'open' : ''}`}>
             <div className='sidebar'>
                 <div className="sidebar-header flex justify-between">
                     <div className="text-2xl font-bold">Portfolio</div>
