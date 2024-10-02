@@ -1,10 +1,10 @@
 
 const Services = () => {
   return (
-    <div className='' style={{backgroundImage: 'linear-gradient(to right, rgb(50 45 65), rgb(50 45 65))'}}>
-        <div className='container mx-auto  pt-5' id='services'>
+    <div className='py-[80px]' style={{backgroundImage: 'linear-gradient(to right, rgb(50 45 65), rgb(50 45 65))'}}>
+        <div className='container mx-auto ' id='services'>
             <h1 className='text-4xl text-center text-white '>Services</h1>
-            <div className='justify-center flex overflow-x-auto snap-x snap-mandatory overflow-hidden py-4'>
+            <div className='justify-center flex overflow-x-auto snap-x snap-mandatory overflow-hidden pt-7'>
                 <div className=' min-w-[100%] md:min-w-[50%] lg:min-w-[33%] snap-center p-2'>
                     <div className='p-3 card   bg-white rounded-xl  drop-shadow-sm transform hover:scale-105 transition-transform duration-300 animate-fade-in'>
                         <div className='card-body h-[300px]'>

@@ -1,14 +1,14 @@
 
 const Aboutme = () => {
   return (
-    <div style={{backgroundImage: 'linear-gradient(to right, #161614, rgb(98 98 119))'}} id='about'>
-        <div className='container mx-auto py-5'>
+    <div className="py-5" style={{backgroundImage: 'linear-gradient(to right, #161614, rgb(98 98 119))'}} id='about'>
+        <div className='container mx-auto py-10'>
             <div>
-                <h1 className='text-4xl text-white text-center'>About Me</h1>
-                <h2 className='text-3xl text-white mt-2'>Skills:</h2>
+                <h1 className='text-4xl text-white text-center'>About Me</h1>                
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2'>
-                <div>
+                <div className="px-3">
+                    <h2 className='text-3xl text-white mt-2'>Skills:</h2>
                     <div>
                         <label className='text-2xl text-white'>React.js</label>
                         <progress value='70' max='100' className='w-full'>70%</progress>
@@ -30,7 +30,7 @@ const Aboutme = () => {
                         <progress value='70' max='100' className='w-full'>70%</progress>
                     </div>
                 </div>            
-                <div>
+                <div className="px-5 pt-5">
                     <div className='p-3'>
                         <p className='text-[16px] text-white px-2'>
                         With 1.4 years of experience in UI design and a strong understanding of front-end development,
