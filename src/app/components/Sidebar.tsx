@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import styles from './sidebar.module.css';
+import  './sidebar.module.css';
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 
