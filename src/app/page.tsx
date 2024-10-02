@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Aboutme from "./components/AboutMe";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
@@ -8,28 +8,31 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Services from "./components/Services";
 
-
 export default function HomePage() {
-  const [isMobile,setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  useEffect(()=>{
-    const handleResize =()=>{
-      setIsMobile(window.innerWidth < 768)
-      
+  useEffect(() => {
+    const mobileQuery = window.matchMedia("(max-width: 767px)");
+
+    const handleResize = () => {
+      setIsMobile(mobileQuery.matches);
     };
-    window.addEventListener('resize',handleResize)
-    return()=>{
-      window.removeEventListener('resize',handleResize)
-    }
-  },[])
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener for screen size changes
+    mobileQuery.addListener(handleResize);
+
+    return () => {
+      mobileQuery.removeListener(handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div>
-        {isMobile ? (
-          <Sidebar />
-        ) : (
-          <Navbar  />
-        )}
+        {isMobile ? <Sidebar /> : <Navbar />}
       </div>
       <Banner />
       <Aboutme />
