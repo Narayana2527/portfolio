@@ -44,7 +44,7 @@ const Contact = () => {
         }
     }
   return (
-    <div className=''>  
+    <div className='bg-cover bg-center bg-no-repeat bg-opacity-0 opacity-95' style={{backgroundImage: 'url(/Images/backgroundImage1.jpg)'}}>  
         <div className='container mx-auto py-5' id='contact'>
         <h1 className='text-4xl text-center text-black'>Contact Me</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 py-[50px]'>
@@ -64,7 +64,8 @@ const Contact = () => {
                 <div className='mt-3'>                
                     <a className=' text-black' href='https://www.linkedin.com/in/narayana-avula-355aa131a'>
                         LinkedIn:
-                        <code className="ms-2 text-blue-600 block break-word">https://www.linkedin.com/in/narayana-avula-355aa131a</code>
+                        <code className="ms-2 text-blue-600">https://www.linkedin.com/in/</code>
+                        <code className="md:inline-block block text-blue-600">narayana-avula-355aa131a</code>
                     </a>
                 </div>
                 <div className='mt-3'>             

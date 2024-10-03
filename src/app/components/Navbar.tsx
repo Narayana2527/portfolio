@@ -1,9 +1,9 @@
 export default function Navbar(){
     return(
-        <nav id='navbar' className="bg-transparent p-3" style={{backgroundImage: 'linear-gradient(to right,#494f19, #011210)'}}>
+        <nav id='navbar' className="bg-transparent p-3 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(/Images/backgroundImage1.jpg)'}}>
             <div className="flex justify-between">
                 <div>
-                    <a className="navbar-brand ms-5 text-2xl text-white" href="#logo">Portfolio</a>                    
+                    <a className="navbar-brand ms-5 text-2xl text-black" href="#logo">Portfolio</a>                    
                 </div>
                 <ul className="navbar-links flex">
                     <li><a href="#home">Home</a></li>

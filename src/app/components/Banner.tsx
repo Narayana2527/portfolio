@@ -2,13 +2,13 @@
 const Banner = () => {
   return (
     <div className=''>
-      <div className='grid grid-cols-12 md:grid-cols-12 lg:grid-cols-12' style={{backgroundImage: 'linear-gradient(to right,#494f19, #011210)'}}>
+      <div className='grid grid-cols-12 md:grid-cols-12 lg:grid-cols-12 bg-center bg-cover bg-no-repeat z-50' style={{backgroundImage: 'url(/Images/backgroundImage1.jpg)'}}>
         <div className=' flex items-center h-[400px] lg:h-[500px] md:h-[500px] md:col-span-6 col-span-full' >
           <div className='ps-3 md:ps-5 lg:ps-6'>
-            <h1 className='text-2xl lg:text-3xl md:text-3xl text-white font-extrabold'>I am</h1>
-            <h2 className='text-3xl lg:text-4xl md:text-4xl mt-2 text-white font-bold'>NARAYANA AVULA</h2>
-            <h3 className='text-3xl lg:text-4xl md:text-4xl mt-2 text-white font-bold'>SOFTWARE DEVELOPER</h3>
-            <p className='mt-2 text-sm text-white'>
+            <h1 className='text-2xl lg:text-3xl md:text-3xl text-black font-extrabold'>I am</h1>
+            <h2 className='text-3xl lg:text-4xl md:text-4xl mt-2 text-blue-900 font-bold'>NARAYANA AVULA</h2>
+            <h3 className='text-3xl lg:text-4xl md:text-4xl mt-2 text-orange-900 font-bold'>SOFTWARE DEVELOPER</h3>
+            <p className='mt-2 text-sm text-black'>
             I specialize in creating visually appealing and user-centered interfaces for both web and mobile applications.
             </p>
             <div className='flex mt-3'>

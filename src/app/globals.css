@@ -7,6 +7,17 @@
 }
 .navbar-links li a{
     font-size: 16px;
-    color: #fff;
+    color: #333;
     padding: 10px 10px;
 }
+
+/* Hide scrollbar for WebKit browsers */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for other browsers */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
