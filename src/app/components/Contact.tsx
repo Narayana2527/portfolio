@@ -64,8 +64,8 @@ const Contact = () => {
                 <div className='mt-3'>                
                     <a className=' text-black' href='https://www.linkedin.com/in/narayana-avula-355aa131a'>
                         LinkedIn:
-                        <code className="ms-2 text-blue-600">https://www.linkedin.com/in/</code>
-                        <code className="md:inline-block block text-blue-600">narayana-avula-355aa131a</code>
+                        <code className="ms-2 text-blue-600">https://www.linkedin.com/</code>
+                        <code className="md:inline-block block text-blue-600">in/narayana-avula-355aa131a</code>
                     </a>
                 </div>
                 <div className='mt-3'>             
